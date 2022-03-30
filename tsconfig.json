@@ -36,6 +36,7 @@
     ".stylelintrc.js",
     ".prettierrc.js",
     "jest.config.js",
+    "windi.config.ts",
     "mock/*"
   ],
   "exclude": ["node_modules", "build", "dist", "scripts", "src/.umi/*", "webpack", "jest"]

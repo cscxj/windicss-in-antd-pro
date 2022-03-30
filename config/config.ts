@@ -1,6 +1,7 @@
 // https://umijs.org/config/
 import { defineConfig } from 'umi';
 import { join } from 'path';
+import WindiCSSWebpackPlugin from 'windicss-webpack-plugin';
 
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
@@ -69,7 +70,10 @@ export default defineConfig({
     },
   ],
   nodeModulesTransform: { type: 'none' },
-  mfsu: {},
-  webpack5: {},
+  mfsu: false,
+  // webpack5: {},
   exportStatic: {},
+  chainWebpack(config: any) {
+    config.plugin('windicss').use(WindiCSSWebpackPlugin);
+  },
 });

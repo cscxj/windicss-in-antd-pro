@@ -276,6 +276,14 @@ const Login: React.FC = () => {
               <FormattedMessage id="pages.login.forgotPassword" defaultMessage="忘记密码" />
             </a>
           </div>
+          <div>
+            Text Windicss：
+            <p className={'text-gray-600 text-2xl font-bold max-w-3xl p-10 bg-gradient-1'}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa dicta in
+              laboriosam molestiae nesciunt pariatur perferendis perspiciatis placeat, porro quaerat
+              qui quis rem similique sint veniam veritatis. Accusamus, sequi?
+            </p>
+          </div>
         </LoginForm>
       </div>
       <Footer />
